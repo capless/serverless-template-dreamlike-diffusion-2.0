@@ -8,7 +8,7 @@ from diffusers import StableDiffusionPipeline, EulerAncestralDiscreteScheduler
 def download_model():
     # do a dry run of loading the huggingface model, which will download weights at build time
     t1 = time.time()
-    model_id = "dreamlike-art/dreamlike-diffusion-1.0"
+    model_id = "dreamlike-art/dreamlike-photoreal-2.0"
     model = StableDiffusionPipeline.from_pretrained(
         model_id
     )
