@@ -12,7 +12,7 @@ def init():
     global model
 
     t1 = time.time()
-    model_id = "dreamlike-art/dreamlike-diffusion-1.0"
+    model_id = "dreamlike-art/dreamlike-photoreal-2.0"
     model = StableDiffusionPipeline.from_pretrained(model_id).to("cuda")
     t2 = time.time()
     print("Init took - ",t2-t1,"seconds")
